@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Buffaloes — Restaurant & Bar Menu</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LANDING PAGE -->
+<div id="landing">
+  <div class="logo-wrap">
+    <img class="logo-image" src="Images/buffaloes-logo.jpeg" alt="Buffaloes Logo" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 200 200%27%3E%3Ccircle cx=%27100%27 cy=%27100%27 r=%2790%27 fill=%27%23D4A853%27/%3E%3Cpath d=%27M60,80 L140,80 L130,160 L70,160 Z%27 fill=%27%237B3A1A%27/%3E%3Ctext x=%27100%27 y=%27135%27 font-size=%2740%27 fill=%27white%27 text-anchor=%27middle%27 font-family=%27Bebas Neue%27%3EB%3C/text%3E%3C/svg%3E';">
+    <div class="logo-title">BUFFALOES</div>
+    <div class="logo-sub">Komamboga Waligo Road</div>
+  </div>
+
+  <div class="divider"></div>
+  <p class="menu-prompt">SELECT YOUR MENU</p>
+
+  <div class="menu-buttons">
+    <div class="menu-btn" onclick="showSection('food')">
+      <div>
+        <div class="btn-label">FOOD</div>
+        <div class="btn-desc">STARTERS · MAINS · SPECIALS · PIZZA</div>
+      </div>
+      <span class="btn-arrow">→</span>
+    </div>
+    <div class="menu-btn" onclick="showSection('drinks')">
+      <div>
+        <div class="btn-label">DRINKS</div>
+        <div class="btn-desc">COFFEE · TEA · MOCKTAILS · JUICES</div>
+      </div>
+      <span class="btn-arrow">→</span>
+    </div>
+    <div class="menu-btn" onclick="showSection('bar')">
+      <div>
+        <div class="btn-label">BAR</div>
+        <div class="btn-desc">SPIRITS · WINE · COCKTAILS · CHAMPAGNE</div>
+      </div>
+      <span class="btn-arrow">→</span>
+    </div>
+  </div>
+
+  <div class="contact-bar">
+    <div class="divider" style="margin-bottom:16px"></div>
+    <p><a href="tel:0759933555">0759 933 555</a> — Komamboga Waligo Road</p>
+  </div>
+</div>
+
+<!-- DYNAMIC MENU VIEW -->
+<div id="section-view">
+  <div class="section-header">
+    <button class="back-btn" onclick="goBack()">← BACK</button>
+    <div class="section-title-bar" id="section-title-bar"></div>
+  </div>
+  <div class="section-content" id="section-content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
