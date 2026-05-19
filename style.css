@@ -40,17 +40,6 @@ body {
   animation: fadeUp 0.8s ease both;
 }
 
-.logo-image {
-  width: 140px;
-  height: auto;
-  max-height: 140px;
-  object-fit: contain;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  display: block;
-}
-.logo-image:hover { transform: scale(1.02); }
-
 .logo-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(52px, 15vw, 80px);
